@@ -1,1 +1,250 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Menu = Instance.new("ScreenGui")
+local Loadingscreen = Instance.new("Frame")
+local LoadingLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextBox2 = Instance.new("TextBox")
+local TextBox1 = Instance.new("TextBox")
+local TextBox3 = Instance.new("TextBox")
+local LoadingLabel_2 = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local LoadingLabel_3 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextBox = Instance.new("TextBox")
+local LoadingLabel_4 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local ImageLabel = Instance.new("ImageLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+
+--Properties:
+
+Menu.Name = "Menu"
+Menu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Menu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Menu.ResetOnSpawn = false
+
+Loadingscreen.Name = "Loadingscreen"
+Loadingscreen.Parent = Menu
+Loadingscreen.BackgroundColor3 = Color3.fromRGB(213, 255, 205)
+Loadingscreen.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Loadingscreen.Position = UDim2.new(0, 0, -0.113490365, 0)
+Loadingscreen.Size = UDim2.new(1, 0, 1.11349034, 0)
+
+LoadingLabel.Name = "LoadingLabel"
+LoadingLabel.Parent = Loadingscreen
+LoadingLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel.BackgroundTransparency = 1.000
+LoadingLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LoadingLabel.Position = UDim2.new(0.347958863, 0, 0.636780262, 0)
+LoadingLabel.Size = UDim2.new(0.302014679, 0, 0.0806666166, 0)
+LoadingLabel.ZIndex = 5
+LoadingLabel.Font = Enum.Font.Nunito
+LoadingLabel.Text = "Script  is  loading..."
+LoadingLabel.TextColor3 = Color3.fromRGB(236, 236, 236)
+LoadingLabel.TextSize = 30.000
+LoadingLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = LoadingLabel
+
+TextBox2.Name = "TextBox2"
+TextBox2.Parent = Loadingscreen
+TextBox2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextBox2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox2.BorderSizePixel = 0
+TextBox2.Position = UDim2.new(-0.0156867336, 0, 0.761184514, 0)
+TextBox2.Size = UDim2.new(0.328186333, 0, 0.0121498574, 0)
+TextBox2.ZIndex = 20
+TextBox2.Font = Enum.Font.SourceSans
+TextBox2.Text = ""
+TextBox2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox2.TextSize = 14.000
+
+TextBox1.Name = "TextBox1"
+TextBox1.Parent = Loadingscreen
+TextBox1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextBox1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox1.BorderSizePixel = 0
+TextBox1.Position = UDim2.new(0.610583901, 0, 0.761184514, 0)
+TextBox1.Size = UDim2.new(0.396575481, 0, 0.0121498574, 0)
+TextBox1.ZIndex = 20
+TextBox1.Font = Enum.Font.SourceSans
+TextBox1.Text = ""
+TextBox1.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox1.TextSize = 14.000
+
+TextBox3.Name = "TextBox3"
+TextBox3.Parent = Loadingscreen
+TextBox3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextBox3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox3.BorderSizePixel = 0
+TextBox3.Position = UDim2.new(0.308812231, 0, 0.761184514, 0)
+TextBox3.Size = UDim2.new(0.306577802, 0, 0.0121498574, 0)
+TextBox3.ZIndex = 20
+TextBox3.Font = Enum.Font.SourceSans
+TextBox3.Text = ""
+TextBox3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox3.TextSize = 14.000
+
+LoadingLabel_2.Name = "LoadingLabel"
+LoadingLabel_2.Parent = Loadingscreen
+LoadingLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel_2.BackgroundTransparency = 1.000
+LoadingLabel_2.BorderSizePixel = 10
+LoadingLabel_2.Position = UDim2.new(0.263446927, 0, 0.224330217, 0)
+LoadingLabel_2.Size = UDim2.new(0.472135931, 0, 0.125016078, 0)
+LoadingLabel_2.ZIndex = 5
+LoadingLabel_2.Font = Enum.Font.Unknown
+LoadingLabel_2.Text = "Dark  Dawn Scripts"
+LoadingLabel_2.TextColor3 = Color3.fromRGB(236, 236, 236)
+LoadingLabel_2.TextScaled = true
+LoadingLabel_2.TextSize = 14.000
+LoadingLabel_2.TextStrokeColor3 = Color3.fromRGB(168, 128, 78)
+LoadingLabel_2.TextStrokeTransparency = 0.000
+LoadingLabel_2.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(247, 255, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(167, 168, 176))}
+UIGradient.Rotation = 90
+UIGradient.Parent = LoadingLabel_2
+
+UITextSizeConstraint_2.Parent = LoadingLabel_2
+
+LoadingLabel_3.Name = "LoadingLabel"
+LoadingLabel_3.Parent = Loadingscreen
+LoadingLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel_3.BackgroundTransparency = 1.000
+LoadingLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LoadingLabel_3.Position = UDim2.new(0.267836511, 0, 0.542537689, 0)
+LoadingLabel_3.Size = UDim2.new(0.463482529, 0, 0.0806666166, 0)
+LoadingLabel_3.ZIndex = 5
+LoadingLabel_3.Font = Enum.Font.JosefinSans
+LoadingLabel_3.Text = "LOADING..."
+LoadingLabel_3.TextColor3 = Color3.fromRGB(236, 236, 236)
+LoadingLabel_3.TextScaled = true
+LoadingLabel_3.TextSize = 14.000
+LoadingLabel_3.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 181, 110)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 169, 128)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 168, 129))}
+UIGradient_2.Rotation = -62.71579360961914
+UIGradient_2.Parent = LoadingLabel_3
+
+UITextSizeConstraint_3.Parent = LoadingLabel_3
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 126, 63)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 191, 161))}
+UIGradient_3.Offset = Vector2.new(-0.191523269, 0.106730767)
+UIGradient_3.Rotation = -48.33779525756836
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.04, 0.00), NumberSequenceKeypoint.new(0.95, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_3.Parent = Loadingscreen
+
+TextBox.Parent = Loadingscreen
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 209, 0)
+TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox.BorderSizePixel = 0
+TextBox.LayoutOrder = -9
+TextBox.Position = UDim2.new(0, 0, 0.761184514, 0)
+TextBox.Size = UDim2.new(1, 0, 0.0121498564, 0)
+TextBox.ZIndex = 15
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+LoadingLabel_4.Name = "LoadingLabel"
+LoadingLabel_4.Parent = Loadingscreen
+LoadingLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel_4.BackgroundTransparency = 1.000
+LoadingLabel_4.BorderSizePixel = 10
+LoadingLabel_4.Position = UDim2.new(0.891765594, 0, 0.937248051, 0)
+LoadingLabel_4.Size = UDim2.new(0.0930798873, 0, 0.0396433622, 0)
+LoadingLabel_4.ZIndex = 5
+LoadingLabel_4.Font = Enum.Font.Unknown
+LoadingLabel_4.Text = "Version: 1.01"
+LoadingLabel_4.TextColor3 = Color3.fromRGB(236, 236, 236)
+LoadingLabel_4.TextScaled = true
+LoadingLabel_4.TextSize = 14.000
+LoadingLabel_4.TextStrokeColor3 = Color3.fromRGB(86, 134, 168)
+LoadingLabel_4.TextStrokeTransparency = 0.000
+LoadingLabel_4.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(247, 255, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(167, 168, 176))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = LoadingLabel_4
+
+UITextSizeConstraint_4.Parent = LoadingLabel_4
+
+ImageLabel.Parent = Loadingscreen
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.Size = UDim2.new(1, 0, 1.11300004, 0)
+ImageLabel.ZIndex = -1
+ImageLabel.Image = "http://www.roblox.com/asset/?id=3899340539"
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 171, 96)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(112, 112, 112))}
+UIGradient_5.Rotation = 269.0633544921875
+UIGradient_5.Parent = ImageLabel
+
+-- Scripts:
+
+local function ZQFLPYA_fake_script() -- LoadingLabel.LocalScript 
+	local script = Instance.new('LocalScript', LoadingLabel)
+
+	task.wait(10)
+	script.Parent.Text = "This might take a while"
+end
+coroutine.wrap(ZQFLPYA_fake_script)()
+local function BEOZS_fake_script() -- TextBox2.LocalScript 
+	local script = Instance.new('LocalScript', TextBox2)
+
+	wait(5)
+	script.Parent.Visible=false
+end
+coroutine.wrap(BEOZS_fake_script)()
+local function NBXIJ_fake_script() -- TextBox1.LocalScript 
+	local script = Instance.new('LocalScript', TextBox1)
+
+	wait(13)
+	script.Parent.Parent.Visible =false
+end
+coroutine.wrap(NBXIJ_fake_script)()
+local function RBUGOHC_fake_script() -- TextBox3.LocalScript 
+	local script = Instance.new('LocalScript', TextBox3)
+
+	wait(17)
+	script.Parent.Visible=false
+end
+coroutine.wrap(RBUGOHC_fake_script)()
+local function DHRFGW_fake_script() -- LoadingLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', LoadingLabel_3)
+
+	local textLabel = script.Parent
+	local duration = 20  -- seconds
+	local elapsed = 0
+	local dotCount = 0
+	
+	while elapsed < duration do
+		dotCount = (dotCount % 3) + 1  -- cycles through 1, 2, 3 dots
+		textLabel.Text = "Loading" .. string.rep(".", dotCount)
+		task.wait(2)
+		elapsed = elapsed + 0.5
+	end
+	
+end
+coroutine.wrap(DHRFGW_fake_script)()
+local function FFGTT_fake_script() -- Loadingscreen.LocalScript 
+	local script = Instance.new('LocalScript', Loadingscreen)
+
+	task.wait(20)
+	script.Parent.Parent.Parent.Enabled = false
+end
+coroutine.wrap(FFGTT_fake_script)()
+
+task.wait(2)
 loadstring(game:HttpGet("https://pastebin.com/raw/XHMN2zpp"))()
